@@ -6,4 +6,3 @@ class Page(models.Model):
     permalink = models.CharField(max_length=12, unique=True)
     update_date = models.DateTimeField('Last Updated')
     bodytext = models.TextField('Pages Content', blank=True)
-# Create your models here.
