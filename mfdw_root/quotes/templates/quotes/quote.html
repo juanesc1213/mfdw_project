@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Quote Request{% endblock title %}
+{% block title %} Devolución{% endblock title %}
 
 {% block sidenav %}
     {% for page in page_list %}
@@ -9,11 +9,11 @@
 {% endblock sidenav %}
 
 {% block content %}
-<h1>Quote Request</h1>
+<h1>Datos Devolución</h1>
 
 {% if submitted %}
     <p class="success">
-        Your quote was submitted successfully. Thank you.
+        Tu reclamo ha sido guardado con exito. Dentro de poco tiempo nos estaremos contactando contigo.
     </p>
 
 {% else %}
