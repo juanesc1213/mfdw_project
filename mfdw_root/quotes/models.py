@@ -12,15 +12,8 @@ PRIORITY_CHOICES = (
     ('L', 'Low - Still Researching'),
 )
 
-GENERO_CHOICES = (
-    ('F','Femenino'),
-    ('M', 'Masculino'),
-    ('NB', 'No Binario')
-)
-
 class Quote(models.Model):
     name = models.CharField(max_length=100)
-    #Genero =models.CharField(max_length = 20, choices= GENERO_CHOICES)
     position = models.CharField(max_length=60, blank=True)
     company = models.CharField(max_length=60, blank=True)
     address = models.CharField(max_length=200, blank=True)
